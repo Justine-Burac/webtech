@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css"/>
+        <title>W-TRAVELS</title>
+    </head> 
+        <body>
+            <header>
+                <div class="navbar">
+                    <div class="logo"><a href="#">W-Travels</a></div>
+                    <ul class="links">
+                        <li><a href="Home">Home</a></li>
+                        <li><a href="Blog">Blog</a></li>
+                        <li><a href="Services">Services</a></li>
+                        <li><a href="Contacts">Contacts</a></li>
+                        <li><a href="About">About</a></li>
+                    </ul>
+                    <a href="#" class="action_button">Log In</a>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+                <div class="dropdownmenu">
+                        <li><a href="Home">Home</a></li>
+                        <li><a href="Blog">Blog</a></li>
+                        <li><a href="Services">Services</a></li>
+                        <li><a href="Contacts">Contacts</a></li>
+                        <li><a href="About">About</a></li>
+                        <li><a href="#" class="action_button">Log In</a></li>
+                </div>
+            </header>
+                <main>
+                    <section id="imahe">
+                        <h1><img src="Untitled91_20250307204516.png" alt="" width="200" height="200"></h1>
+                        <p><i>Write your travel story with</i><br><strong>W-Travels</strong></p>
+                    </section>
+                    
+                </main>
+                <script> 
+                    const toggle_btn = document.querySelector('.toggle_btn')
+                    const toggle_btnIcon = document.querySelector('.toggle_btn i')
+                    const dropdownmenu = document.querySelector('.dropdownmenu')
+
+                    toggle_btn.onclick = function (){
+                        dropdownmenu.classList.toggle('open')
+                        const isOpen = dropdownmenu.classList.contains('open')
+
+                        toggle_btnIcon.classList = isOpen
+                        ? 'fa-solid fa-xmark'
+                        : 'fa-solid fa-bars'
+                    }
+                </script>
+        </body>
+</html>
+
+
